@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACGT Wallpi</title>
+    <link rel="shortcut icon" href="Gallery/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="acgtwallpi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="nav" class="bg-black">
+        <img src="Gallery/logo.jpg" alt="logo" width="80"> ACGT Wallpi
+    </div>
+    <br><br>
+    <form action="" >
+        <input type="text" id="search-input" placeholder="Search for Images..">
+        <button id="search-button">Search</button>
+    </form>
+    <div class="search-results">
+        <div class="search-result">
+            <img src="Gallery/Dhoni.jpg" alt="Two couple looking like Great">
+            <a href="" target="_blank"> MS Dhoni</a>
+            <button onclick="Toggle1()" id="btn1" class="btn"><i class="fa-solid fa-heart"></i></button>
+            <button type="button" id="unique" class="btn btn-primary"><a href="Gallery/Nature.jpg" target="_blank"
+                    download="Ms Dhoni">MS.Dhoni</a></button>
+        </div>
+        <div class="search-result">
+            <img src="Gallery/Hanuman.jpg" alt="Two couple looking like Great">
+            <a href="" id="H1" target="_blank">Hanuman Ji</a>
+            <button onclick="Toggle2()" id="btn2" class="btn"><i class="fa-solid fa-heart"></i></button>
+            <button type="button" id="unique" class="btn btn-primary"><a href="Gallery/Nature.jpg" target="_blank"
+                    download="Hanuman">Hanuman Ji</a></button>
+        </div>
+        <div class="search-result">
+            <img src="Gallery/Hardik.jpg" alt="Two couple looking like Great">
+            <a href="" target="_blank">Virat</a>
+            <button onclick="Toggle3()" id="btn3" class="btn"><i class="fa-solid fa-heart"></i></button>
+            <button type="button" id="unique" class="btn btn-primary"><a href="Gallery/Nature.jpg" target="_blank"
+                    download="Hardik">Hardik Pandaya</a></button>
+        </div>
+
+        <div class="search-result">
+            <img src="Gallery/i_d.jpg" alt="Two couple looking like Great">
+            <a href="" target="_blank">WaxMan</a>
+            <button onclick="Toggle4()" id="btn4" class="btn"><i class="fa-solid fa-heart"></i></button>
+            <button type="button" id="unique" class="btn btn-primary"><a href="Gallery/Nature.jpg" target="_blank"
+                    download="irondore">Collab IronDore</a></button>
+        </div>
+        <div class="search-result">
+            <img src="Gallery/Innovatrix.jpg" alt="Two couple looking like Great">
+            <a href="" target="_blank">Innoman</a>
+            <button onclick="Toggle5()" id="btn5" class="btn"><i class="fa-solid fa-heart"></i></button>
+            <button type="button" id="unique" class="btn btn-primary"><a href="Gallery/Nature.jpg" target="_blank"
+                    download="Innovatrix">InnovatrixRobot</a></button>
+        </div>
+        <div class="search-result">
+            <img src="Gallery/Innovatrix1.jpg" alt="Two couple looking like Great">
+            <a href="" target="_blank">WaxMan</a>
+            <button onclick="Toggle6()" id="btn6" class="btn"><i class="fa-solid fa-heart"></i></button>
+            <button type="button" id="unique" class="btn btn-primary"><a href="Gallery/Nature.jpg" target="_blank"
+                    download="Inno">Virtual Robot</a></button>
+        </div>
+        <div class="search-result">
+            <img src="Gallery/Shiv.jpg" alt="Two couple looking like Great">
+            <a href="" target="_blank">Shivji</a>
+            <button onclick="Toggle7()" id="btn7" class="btn"><i class="fa-solid fa-heart"></i></button>
+            <button type="button" id="unique" class="btn btn-primary"><a href="Gallery/Nature.jpg" target="_blank"
+                    download="Shivji">Shiv Ji</a></button>
+        </div>
+        <div class="search-result">
+            <img src="Gallery/RamJi.jpg" alt="Two couple looking like Great">
+            <a href="" target="_blank">Jai shree Ram</a>
+            <button onclick="Toggle8()" id="btn8" class="btn"><i class="fa-solid fa-heart"></i></button>
+            <button type="button" id="unique" class="btn btn-primary"><a href="Gallery/Nature.jpg" target="_blank"
+                    download="Jai shree Ram">Jai shree Ram</a></button>
+        </div>
+        <div class="search-result">
+            <img src="Gallery/Chetri.jpg" alt="Two couple looking like Great">
+            <a href="" target="_blank">Sunil Chetri</a>
+            <button onclick="Toggle9()" id="btn9" class="btn"><i class="fa-solid fa-heart"></i></button>
+            <button type="button" id="unique" class="btn btn-primary"><a href="Gallery/Nature.jpg" target="_blank"
+                    download="Sunil Chetri">Sunil Chetri</a></button>
+        </div>
+    </div>
+    <button id="show-more-button">Show More</button>
+    <!-- Video Section -->
+
+    <div class="container">
+        <div class="top">
+            <h1>Plans & Pricing Of Wallpaper</h1>
+            <div class="toggle-btn">
+                <span style="margin: 0.8em;">Annually</span>
+                <label class="switch">
+                    <input type="checkbox" id="checbox" onclick="check()" ; />
+                    <span class="slider round"></span>
+                </label>
+                <span style="margin: 0.8em;">Monthly</span>
+            </div>
+        </div>
+
+        <div class="package-container">
+            <div class="packages">
+                <h1>Basic Plan</h1>
+                <h2 class="text1">&dollar;9.99</h2>
+                <h2 class="text2">&dollar;119.99</h2>
+                <ul class="list">
+                    <li class="first">Free Stock</li>
+                    <li>12,000 Wallpaper</li>
+                    <li>MultiInterfaces Wallpaper</li>
+                    <li>Email Support</li>
+                </ul>
+                <a href="#" class="button button1">Start Now</a>
+            </div>
+            <div class="packages">
+                <h1>Professional Plan</h1>
+                <h2 class="text1">&dollar;19.99</h2>
+                <h2 class="text2">&dollar;239.99</h2>
+                <ul class="list">
+                    <li class="first">Basic + Professional Wallpaper</li>
+                    <li>Landing Websites Logo</li>
+                    <li>Professional Scenery</li>
+                    <li>Professional Support</li>
+                </ul>
+                <a href="#" class="button button2">Start Now</a>
+            </div>
+            <div class="packages">
+                <h1>Premium Plan</h1>
+                <h2 class="text1">&dollar;29.99</h2>
+                <h2 class="text2">&dollar;359.99</h2>
+                <ul class="list">
+                    <li class="first">Basic+Professional+ <br>Premium</li>
+                    <li>Premium Wallpaper</li>
+                    <li>Instagram Ads</li>
+                    <li>Google Ads</li>
+                </ul>
+                <a href="#" class="button button3">Start Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Frequently Asked Questions -->
+    <br><br>
+    <div class="container ">
+        <h1 class="text-center">Frequently Asked Questions</h1>
+        <br><br>
+        <div class="accordion accordion-flush my-10" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        What is the purpose of this website?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The purpose of this website is to provide a vast collection of
+                        high-quality wallpapers for users to download and use on their devices, free of charge. Our goal
+                        is to offer a diverse and constantly updated selection of wallpapers, catering to various tastes
+                        and preferences, to help users personalize their digital spaces and enhance their overall visual
+                        experience.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Are the wallpapers free to use?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Yes, all wallpapers on our website are completely free to download and
+                        use for personal, non-commercial purposes. You can use them as desktop wallpapers, mobile
+                        wallpapers, or even as backgrounds for your social media profiles.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Do you offer mobile wallpapers?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> Yes, we offer a wide range of mobile wallpapers in various sizes and
+                        resolutions to fit different mobile devices, including smartphones and tablets. Our mobile
+                        wallpapers are optimized for portrait and landscape orientations, and you can browse them by
+                        device type, resolution, or category.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>ABC, London</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>6792938711</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="Gallery/logo.jpg" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Hey there , This is our platform which is available many photos and Wallpaper of any
+                                    type. you will search any Wallpaper then this platform will give you many different
+                                    type of photos.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">NewsLetter</a></li>
+                                <li><a href="#">Servicies</a></li>
+                                <li><a href="#">Wallpaper</a></li>
+                                <li><a href="#">Illustration</a></li>
+                                <li><a href="#">Creators</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest Update</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#" onsubmit="sendEmail(); reset(); return false">
+                                    <input type="text" id="email" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved <a href="">ACGT</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="acgtwallpi.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</html>
